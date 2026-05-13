@@ -208,8 +208,8 @@ eeg-mind-reader/
 ### 1. Clone & Setup
 
 ```bash
-git clone https://github.com/yourusername/eeg-mind-reader.git
-cd eeg-mind-reader
+git clone https://github.com/SanoberRehman/EEG-MindReader.git
+cd EEG-MindReader
 
 # Create virtual environment
 python -m venv venv
@@ -311,11 +311,11 @@ Model checkpoints are saved to `models/` and can be reloaded for inference.
 
 ## 👤 Author
 
-**Sanober**
+**Sanober Rehman**
 
-- Email: maaz@startupfuel.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- GitHub: [Your GitHub](https://github.com/yourusername)
+- Email: sanoberrehman2w@gmail.com
+- LinkedIn: [Sanober Rehman](https://linkedin.com/in/SanoberRehman)
+- GitHub: [SanoberRehman](https://github.com/SanoberRehman)
 
 ---
 
