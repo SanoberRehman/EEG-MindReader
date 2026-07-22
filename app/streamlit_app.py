@@ -163,7 +163,7 @@ def load_model(model_name: str, subject_id: int = 1):
     # Try to load checkpoint
     checkpoint_path = MODELS_DIR / f"{model_name.lower().replace('-', '_')}_subject{subject_id}.pt"
     if checkpoint_path.exists():
-        checkpoint = torch.load(checkpoint_path, map_location=DEVICE)
+        checkpoint = torch.load(checkpoint_path, map_location=DEVICE, weights_only=True)
         model.load_state_dict(checkpoint['model_state_dict'])
         st.sidebar.success(f"Loaded trained {model_name}")
     else:

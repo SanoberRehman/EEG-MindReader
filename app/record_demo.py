@@ -74,7 +74,7 @@ def load_model():
     model = EEGNet(n_channels=22, n_timepoints=500, n_classes=4)
     checkpoint_path = MODELS_DIR / "eegnet_subject1.pt"
     if checkpoint_path.exists():
-        checkpoint = torch.load(checkpoint_path, map_location=DEVICE, weights_only=False)
+        checkpoint = torch.load(checkpoint_path, map_location=DEVICE, weights_only=True)
         model.load_state_dict(checkpoint['model_state_dict'])
     model.eval()
     return model.to(DEVICE)
