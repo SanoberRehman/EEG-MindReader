@@ -384,7 +384,7 @@ def load_checkpoint(
     if not checkpoint_path.exists():
         raise FileNotFoundError(f"No checkpoint found at {checkpoint_path}")
 
-    checkpoint = torch.load(checkpoint_path, map_location=device)
+    checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
     model.load_state_dict(checkpoint["model_state_dict"])
     model = model.to(device)
 
